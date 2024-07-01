@@ -3,10 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-    
+ 
 }
+
+.navbar h1{
+    color: #01d449;
+}
+
 .navbar .logo{
     width: 150px;
 }
@@ -33,7 +36,7 @@
     font-size: 16px;
     
     color: rgb(100, 100, 100);
-    border:1px solid green;
+    border:1px solid #01d449;
     border-radius: 50px;
     padding: 10px 30px;
     cursor: pointer;
@@ -41,12 +44,12 @@
 }
 
 .navbar button:hover{
-    background-color: aqua;
+    background-color: #01d449;
 }
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #01d449;
 }
 .navbar-search-icon{
     position: relative;
@@ -56,7 +59,7 @@
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color: tomato;
+    background-color: #01d449;
     border-radius: 5px;
     top: -8px;
     right: -8px;
