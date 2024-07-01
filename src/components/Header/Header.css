@@ -4,9 +4,10 @@
     
     height: 34vw;
     margin: 30px auto;
-    background: url('/public/header_img.png') no-repeat;
+    background: url('/public/food4.jpg') no-repeat;
     background-size: contain;
     position: relative;
+    
 }
 
 .header-contents{
@@ -16,8 +17,8 @@
     align-items: start;
     gap: 1.5vw;
     max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
+    top: 10%;
+    left: 2.5vw;
     animation: fadeIn 3s;
     
 }
@@ -35,10 +36,10 @@
 
 .header-contents button{
     border: none;
-    color: grey;
+    color: black;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background-color: white;
+    background-color: #01d449;
     font-size: max(1vw, 13px);
     border-radius: 50px;
 }
