@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='footer-content-left'>
                 {/* <img src={assets.logo} alt=''></img> */}
                 <h1>Taste Wish</h1>
-                <p>ddd dddd ddd ddd yyyyyyyy yyyyy yyyyyyyy yyyyyyyy yyyy yyy yyy yyyy yyyyyyy yyy yyyyyyyyy yyyyyy yyy yyy yyyyy yyy yy yyyy</p>
+                <p>Welcome to Taste Wish, where we bring delicious meals from your favorite restaurants straight to your doorstep, ensuring a convenient, quick, and delightful dining experience with just a few clicks. Savor the convenience of gourmet dining at home.</p>
                 <div className='footer-scoial-icons'>
                     <img src={assets.facebook_icon} alt=''></img>
                     <img src={assets.twitter_icon} alt=''></img>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <h2>Get In Touch</h2>
                 <ul>
                     <li>(+94)787642771</li>
-                    <li>Contact@gmail.com</li>
+                    <li>tastewish@gmail.com</li>
                 </ul>
             </div>
         </div>
