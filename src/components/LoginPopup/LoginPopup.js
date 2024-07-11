@@ -23,7 +23,12 @@ const LoginPopup = ({setShowLogin}) => {
                 <input type='checkbox' required></input>
                 <p>By continuing , i agree to the terms of use & privacy policy.</p>
             </div>
-            <p>Create a new account? <span>Click hear</span></p>
+            {currState==="log in"
+            ?<p>Create a new account? <span onClick={()=>setCurrState("Sign Up")}>Click hear</span></p>
+            :<p>Already have an account?  <span onClick={()=>setCurrState("log in")}>Login hear</span></p>
+            }
+            
+            
         </form>
     </div>
   )
