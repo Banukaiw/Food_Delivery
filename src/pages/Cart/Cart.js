@@ -4,7 +4,7 @@ import {StoreContext} from '../../context/StoreContext'
 
 const Cart = () => {
 
-  const {cartItems,food_list,removeFromCart} = useContext(StoreContext)
+  const {cartItems,food_list,removeFromCart,getTotalCartAmount} = useContext(StoreContext)
   return (
     <div className='cart'>
       <div className='cart-item'>
@@ -26,9 +26,9 @@ const Cart = () => {
                 <div className='cart-item-title cart-item-item'>
                 <img src={item.image} alt=''></img>
                 <p>{item.name}</p>
-                <p>${item.price}</p>
+                <p>RS.{item.price}</p>
                 <p>{cartItems[item._id]}</p>
-                <p>${item.price * cartItems[item._id]}</p>
+                <p>RS.{item.price * cartItems[item._id]}</p>
                 <p onClick={()=>removeFromCart(item._id)} className='cross'>x</p>
               </div>
               <hr/>
@@ -40,21 +40,21 @@ const Cart = () => {
       </div>
       <div className='cart-bottom'>
         <div className='cart-total'>
-          <h2>cart Totals</h2>
+          <h2>Cart Totals</h2>
           <div>
             <div className='cart-total-details'>
               <p>Subtotal</p>
-              <p>{0}</p>
+              <p>RS.{getTotalCartAmount()}</p>
             </div>
             <hr/>
             <div className='cart-total-details'>
               <p>Delivery Free</p>
-              <p>{2}</p>
+              <p>RS.{2}</p>
             </div>
             <hr/>
             <div className='cart-total-details'>
               <p>Total</p>
-              <p>{0}</p>
+              <p>RS.{getTotalCartAmount()+2}</p>
             </div>
             
           </div>
@@ -62,7 +62,7 @@ const Cart = () => {
         </div>
         <div className='cart-promocode'>
           <p>If you have a promo code, Enter it hear</p>
-          <div className='cart-prpmocode-input'>
+          <div className='cart-promocode-input'>
             <input type='text' placeholder='promo code'></input>
             <button>Submit</button>
           </div>
