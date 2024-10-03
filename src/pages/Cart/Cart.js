@@ -38,6 +38,7 @@ const Cart = () => {
               
             )
           }
+          return null;
         })}
       </div>
       <div className='cart-bottom'>
